@@ -50,7 +50,7 @@ export default function Dashboard({ user, onLogout }) {
   const [salesLoading, setSalesLoading] = useState(false);
   const [salesError, setSalesError] = useState("");
 
-  const API_URL = "http://localhost:7070";
+  const API_URL = "https://stockflow-backend-lls9.onrender.com";
   const getHeaders = () => ({
     "Content-Type": "application/json",
     Authorization: `Bearer ${localStorage.getItem("token")}`,

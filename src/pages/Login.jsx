@@ -11,7 +11,7 @@ export default function Login({ onLoginSuccess, onSwitchToRegister }) {
     setError('');
     
     try {
-      const response = await fetch('http://localhost:7070/auth/login', {
+      const response = await fetch('https://stockflow-backend-lls9.onrender.com/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),

@@ -10,7 +10,7 @@ export default function SalesInvoiceDetail({ orderId, onBack, apiUrl, headers })
     setIsLoading(true);
     setErrorMsg('');
     try {
-      const response = await fetch(`${apiUrl || 'http://localhost:7070'}/sales/${orderId}`, {
+      const response = await fetch(`${apiUrl || 'https://stockflow-backend-lls9.onrender.com'}/sales/${orderId}`, {
         headers: headers
       });
       const data = await response.json();

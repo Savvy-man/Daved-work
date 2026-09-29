@@ -12,7 +12,7 @@ export default function Register({ onRegisterSuccess, onSwitchToLogin }) {
     setError('');
     
     try {
-      const response = await fetch('http://localhost:7070/auth/register', {
+      const response = await fetch('https://stockflow-backend-lls9.onrender.com/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password }),

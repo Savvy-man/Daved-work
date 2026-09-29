@@ -57,8 +57,8 @@ export default function OutboundLogModal({
     const calculatedTotalInvoice = Number(shipQty) * Number(unitPrice);
 
     try {
-      const response = await fetch(
-        `${apiUrl || "http://localhost:7070"}/sales`,
+            const response = await fetch(
+              `${apiUrl || "https://stockflow-backend-lls9.onrender.com"}/sales`,
         {
           method: "POST",
           headers: headers || {

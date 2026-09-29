@@ -49,7 +49,7 @@ export default function EditProductModal({
     try {
       // Direct update path hitting your specific product ID route configuration
       const response = await fetch(
-        `${apiUrl || "http://localhost:7070"}/products/${product.id || product._id}`,
+        `${apiUrl || "https://stockflow-backend-lls9.onrender.com"}/products/${product.id || product._id}`,
         {
           method: "PUT", // Switch to 'PATCH' if your backend routing demands it
           headers: headers || {

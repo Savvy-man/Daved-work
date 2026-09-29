@@ -25,7 +25,7 @@ export default function AddProductModal({
 
   if (!isOpen) return null;
 
-  const API_URL = "http://localhost:7070";
+  const API_URL = "https://stockflow-backend-lls9.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
